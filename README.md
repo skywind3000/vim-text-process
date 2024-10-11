@@ -1,14 +1,14 @@
 # Preface
 
-This plugin provides an elegant way to manage and invoke text filters. A filter is a program that accepts text at standard input, changes it in some way, and sends it to standard output.
+This plugin offers an elegant solution for managing and invoking text filters. A filter is a program that accepts text at standard input, changes it in some way, and sends it to standard output.
 
 Vim natively support the [filter commands](https://vimhelp.org/change.txt.html#filter) to modify the selected text with external filter programs, but when the command becomes complex, typing it out one character at a time becomes tedious. Additionally, wrapping each command into a new Vim command or map is not very practical if you have to deal with many filters.
 
-By using this plugin, you can encapsule complex filter commands into shell/python/awk scripts in a centralized directory and enumerate or run them with a `:{range}TP[!] {name}` command:
+With this plugin, you can encapsulate complex filter commands into shell, Python, or Awk scripts within a centralized directory. You can then list or execute them using the "`:{range}TP[!] {name}`" command.
 
 ![](https://skywind3000.github.io/images/p/textproc/tp1.gif)
 
-When bang '!` is included, you can preview changes in a separated window without modifying current text:
+When the bang mark `!` is included, you can preview changes in a separate window without modifying current text:
 
 ![](https://skywind3000.github.io/images/p/textproc/tp2.gif)
 
