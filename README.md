@@ -147,6 +147,23 @@ g:textproc_runner  - a dictionary of filter runners
 
 If a filter program name is starting with a underscore "`_`" it will not be included, like "`_textlib.py`", disable this behavior by changing "`g:textproc_underscore`" to zero.
 
+## Environment variables
+
+Before calling a filter script, this plugin will setup some useful environment variables for the child process:
+
+```bash
+$VIM_ENCODING      # value of &encoding in vim.
+$VIM_FILEPATH      # file name of current buffer with full path
+$VIM_FILENAME      # file name of current buffer without path
+$VIM_FILEDIR       # full path of current buffer without the file name
+$VIM_SCRIPT        # file name of the filter program
+$VIM_SCRIPTDIR     # directory of filter program
+$VIM_FILETYPE      # file type of current buffer
+$VIM_LINE1         # start line of the given {range}
+$VIM_LINE2         # last line of the given {range}
+```
+
+Read them from your script if necessary.
 
 ## Credit
 
