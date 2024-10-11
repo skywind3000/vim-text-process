@@ -118,6 +118,8 @@ END {
 
 Awk scripts are incredibly useful for processing columnar data. This script can read the content of `/etc/passwd` and output user names along with their home directories.
 
+More examples can be found in the [examples](examples) folder.
+
 
 ## Searching
 
@@ -145,4 +147,8 @@ g:textproc_runner  - a dictionary of filter runners
 
 If a filter program name is starting with a underscore "`_`" it will not be included, like "`_textlib.py`", disable this behavior by changing "`g:textproc_underscore`" to zero.
 
+
+## Credit
+
+TODO
 
