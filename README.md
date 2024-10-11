@@ -20,6 +20,7 @@ This is useful when debugging your filter script.
 - Command line completion for filter names.
 - Preview changes from a separate split window.
 - Extract the shebang line (`#! xxx`) from the filter script file automantically.
+- Environment variables containing useful information for the filter script.
 
 
 ## Setup
