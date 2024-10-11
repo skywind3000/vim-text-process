@@ -134,7 +134,7 @@ Text filter programs will be searched from directories below:
 A file inside each search path will be considered as a valid filter:
 
 - If the file has got the execution privilege.
-- if the file has an extension name of `.[py|sh|pl|lua|sh|awk|js|cmd|bat]`.
+- if the file has an extension name of `.[py|sh|pl|lua|sh|awk|js|cmd|bat]` (configurable).
 
 ## Settings
 
