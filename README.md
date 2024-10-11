@@ -18,8 +18,7 @@ This is useful when debugging your filter script.
 ## Features
 
 - Command line completion for filter names.
-- Script files got execution privilege in the root (`g:textproc_root`) directory will be listed.
-- Script files with  in the root directory will be listed by default.
+- Preview changes from a separate split window.
 
 
 ## Setup
