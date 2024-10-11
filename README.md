@@ -22,7 +22,7 @@ This is useful when debugging your filter script.
 - Script files with  in the root directory will be listed by default.
 
 
-## Installation
+## Setup
 
 ```VimL
 Plug 'skywind3000/vim-text-process'
