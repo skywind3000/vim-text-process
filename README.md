@@ -28,7 +28,7 @@ let g:textproc_runner = {
 
 ## Documentation
 
-This script provides a command:
+This plugin provides a command:
 
 ```viml
 :{range}TP[!] {name}
