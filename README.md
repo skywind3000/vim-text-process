@@ -4,7 +4,7 @@ This plugin offers an elegant solution for managing and invoking text filters. A
 
 Vim natively support the [filter commands](https://vimhelp.org/change.txt.html#filter) to modify the selected text with external filter programs, but when the command becomes complex, typing it out one character at a time becomes tedious. Additionally, wrapping each command into a new Vim command or map is not very practical if you have to deal with many filters.
 
-With this plugin, you can encapsulate complex filter commands into shell, Python, or Awk scripts within a centralized directory. You can then list or execute them using the "`:{range}TP[!] {name}`" command.
+With this plugin, you can encapsulate complex filter commands into shell, Python, Perl, or Awk scripts within a centralized directory. You can then list or execute them using the "`:{range}TP[!] {name}`" command.
 
 ![](https://skywind3000.github.io/images/p/textproc/tp1.gif)
 
@@ -36,9 +36,10 @@ let g:textproc_split = 'auto'
 
 " filter runner
 let g:textproc_runner = {
-    \ 'py': 'python',
+    \ 'py': 'python3',
     \ 'sh': '/usr/bin/bash',
     \ 'awk': '/usr/bin/gawk -f',
+    \ 'perl': '/usr/bin/perl',
     \ }
 ```
 
